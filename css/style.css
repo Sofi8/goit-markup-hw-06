@@ -520,8 +520,6 @@ margin-bottom: 30px;
   
 }
 
-
-
 .master-social{
   width: 44px;
   height: 44px;
@@ -723,7 +721,7 @@ margin-bottom: 30px;
     text-align: center;
     color: #ffffff;
     background-color: var(--accent-color);
-    padding: 10px 56px 10px 36px;
+    padding: 10px 62px 10px 29px;
     min-width: 200px;
     justify-content: center;
     border-radius: 4px;
@@ -735,7 +733,7 @@ margin-bottom: 30px;
 .button.input-btn:hover,
 .button.input-btn:focus svg{
   color: var(--accent-color);
-  background-color: var(--primary-white-color);
+  background-color: var(--secondary-bg-color)
 }
 .sub-icon{
     position: absolute;
@@ -745,10 +743,7 @@ margin-bottom: 30px;
     margin-left: 10px;
     fill: var(--primary-white-color);
 }
- .sub-icon:hover,
- .sub-icon:focus{
-   fill: var(--accent-color);
- }
+
 
  .input-form{
     width: 358px;
