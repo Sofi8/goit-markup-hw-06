@@ -919,6 +919,7 @@ margin-bottom: 30px;
     border-radius: 50%;
     justify-content: center;
     text-align: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -930,10 +931,10 @@ margin-bottom: 30px;
      
 }
 
-.modal-backdrop-button:hover svg{
- transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
- fill:var(--accent-color);
-}
+ .modal-backdrop-button:hover svg{
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill:var(--accent-color);
+} 
 
 .is-hidden{
     opacity: 0;
@@ -950,7 +951,7 @@ font-size: 20px;
 line-height: 1.15;
 text-align: center;
 letter-spacing: 0.03em;
-margin-bottom: 30px;
+margin-bottom: 12px;
 
 }
 
