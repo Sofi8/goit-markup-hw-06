@@ -1,0 +1,15 @@
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.wrap-filter {
+    margin-right: 8px;
+}
+
+.wrap-filter:not(last-child) {
+    margin-right: 8px;
+}

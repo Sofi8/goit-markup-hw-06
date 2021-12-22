@@ -1,0 +1,30 @@
+.master-item-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-footer-icon:not(:last-child) {
+    margin-right: 10px;
+}
+
+.master-bg-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: #FFFFFF;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.master-bg-icon:hover,
+.master-bg-icon:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    fill: #ffff;
+
+}

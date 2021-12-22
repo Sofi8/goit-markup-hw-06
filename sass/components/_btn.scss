@@ -1,0 +1,161 @@
+.button {
+    color: var(--title-text-color);
+    background-color: var(--primary-bg-button);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+
+    padding: 6px 22px 6px 22px;
+
+    border: none;
+    border-radius: 4px;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button:hover,
+.button:focus {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+
+}
+
+.button.pre-hero {
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    text-align: center;
+
+    padding: 10px 32px;
+    display: block;
+    margin: 0 auto;
+    min-width: 200px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+// Btn footer
+
+.input-btn {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    background-color: var(--accent-color);
+    padding: 10px 62px 10px 29px;
+    min-width: 200px;
+    justify-content: center;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button.input-btn:hover,
+.button.input-btn:focus svg {
+    color: var(--accent-color);
+    background-color: var(--secondary-bg-color)
+}
+
+.sub-icon {
+    position: absolute;
+    right: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 10px;
+    fill: var(--primary-white-color);
+}
+
+
+.input-form {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 14px;
+    outline: none;
+    padding-left: 16px;
+    color: #ffffff;
+}
+
+
+// Btn modal
+.modal-backdrop-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: transparent;
+    cursor: pointer;
+    border-radius: 50%;
+    justify-content: center;
+    text-align: center;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.close-icon {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
+    color: #000000;
+
+}
+
+.modal-backdrop-button:hover svg {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--accent-color);
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+.submit-button {
+    display: block;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    align-items: center;
+    display: block;
+    text-align: center;
+    color: #ffffff;
+    background-color: var(--accent-color);
+    padding: 10px 56px;
+    min-width: 200px;
+    margin-top: 30px;
+    margin-left: 124px;
+    margin-right: 124px;
+    justify-content: center;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-button:hover {
+color: var(--accent-color);
+background-color: var(--primary-white-color)
+}

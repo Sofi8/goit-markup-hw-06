@@ -1,0 +1,80 @@
+.footer {
+    background-color: var(--secondary-bg-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.page-footer {
+    margin-left: 70px;
+}
+
+
+.address {
+    color: var(--primary-white-color);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+
+    margin-top: 20px;
+
+}
+
+.footer-mail,
+.footer-phone {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    display: block;
+    margin-top: 9px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+}
+
+.footer-mail:hover,
+.footer-mail:focus,
+.footer-phone:hover,
+.footer-phone:focus {
+    color: var(--accent-color);
+}
+
+
+
+.work {
+    color: var(--primary-white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+}
+
+//  Підписка на розсилку 
+
+.footer-subscription {
+    align-items: baseline;
+    margin-left: 93px;
+    width: 570px;
+    height: 86px;
+}
+
+.sub-input {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+}

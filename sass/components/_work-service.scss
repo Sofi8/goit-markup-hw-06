@@ -1,0 +1,47 @@
+.image {
+    display: flex;
+
+}
+
+.image-work-section {
+    position: relative;
+    display: block;
+    /* width: 370px; */
+
+
+}
+
+.image-work {
+    height: 294px;
+    width: calc((100%-60px) / 3);
+    margin-right: 30px;
+
+}
+
+.image-work:nth-child(3n) {
+    margin-right: 0px;
+
+}
+
+.work-title {
+    color: var(--primary-white-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 27px 0;
+    bottom: 0;
+    left: 0;
+    width: 370px;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+
+
+
+}
