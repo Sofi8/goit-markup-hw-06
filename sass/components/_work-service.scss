@@ -6,22 +6,22 @@
 .image-work-section {
     position: relative;
     display: block;
-    /* width: 370px; */
-
-
+    
 }
 
 .image-work {
     height: 294px;
     width: calc((100%-60px) / 3);
     margin-right: 30px;
-
+    &:nth-child(3n) {
+        margin-right: 0px;
+    }
 }
 
-.image-work:nth-child(3n) {
-    margin-right: 0px;
+// .image-work:nth-child(3n) {
+//     margin-right: 0px;
 
-}
+// }
 
 .work-title {
     color: var(--primary-white-color);

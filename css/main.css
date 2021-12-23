@@ -9,6 +9,17 @@
   --portfolio-cards-color: rgba(33, 150, 243, 0.9);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
 p,
 h1,
 h2,
@@ -37,17 +48,6 @@ img {
   text-decoration: none;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  border: 0;
-  clip: rect(0 0 0 0);
-}
-
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -74,12 +74,6 @@ img {
   margin-bottom: 30px;
 }
 
-.button.pre-hero:hover,
-.button.pre-hero:focus {
-  color: var(--accent-color);
-  background-color: var(--primary-white-color);
-}
-
 .wrap-work {
   display: flex;
   flex-wrap: wrap;
@@ -92,8 +86,7 @@ img {
   margin-bottom: 30px;
 }
 
-.wrap-item:hover,
-.wrap-item:focus {
+.wrap-item:hover, .wrap-item:focus {
   border-radius: 4px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -226,10 +219,6 @@ img {
   color: var(--primary-text-color);
 }
 
-.modal-text:focus {
-  border-color: var(--accent-color);
-}
-
 .input-icon {
   position: absolute;
   left: 14px;
@@ -250,6 +239,10 @@ img {
   outline: none;
   resize: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-text:focus {
+  border-color: var(--accent-color);
 }
 
 .modal-circs {
@@ -355,8 +348,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -378,6 +370,11 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.button.pre-hero:hover, .button.pre-hero:focus {
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
+}
+
 .input-btn {
   display: block;
   font-weight: 700;
@@ -397,8 +394,8 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button.input-btn:hover,
-.button.input-btn:focus svg {
+.input-btn:hover,
+.input-btn:focus svg {
   color: var(--accent-color);
   background-color: var(--secondary-bg-color);
 }
@@ -442,16 +439,16 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-backdrop-button:hover svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--accent-color);
+}
+
 .close-icon {
   position: absolute;
   right: 8px;
   bottom: 8px;
   color: #000000;
-}
-
-.modal-backdrop-button:hover svg {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: var(--accent-color);
 }
 
 .is-hidden {
@@ -496,6 +493,10 @@ body {
 
 .section.wrap-section {
   padding-bottom: 0px;
+}
+
+.section.command {
+  background-color: #F5F4FA;
 }
 
 .wrap-about {
@@ -545,7 +546,6 @@ body {
 .image-work-section {
   position: relative;
   display: block;
-  /* width: 370px; */
 }
 
 .image-work {
@@ -593,10 +593,6 @@ body {
   padding-top: 30px;
 }
 
-.section.command {
-  background-color: #F5F4FA;
-}
-
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -642,14 +638,13 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.master-social:hover,
-.master-social:focus {
+.master-social:hover, .master-social:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
   fill: #ffff;
 }
 
-.master-item-social:not(:last-child) {
+.master-social:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -675,20 +670,12 @@ body {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box-link:hover {
+.box-link:hover, .box-link:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
 
-.box-link:focus {
-  border: 1px solid var(--accent-color);
-  border-radius: 4px;
-}
-
-.box-link:hover svg {
-  fill: var(--accent-color);
-}
-
+.box-link:hover svg,
 .box-link:focus svg {
   fill: var(--accent-color);
 }
@@ -719,8 +706,7 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.master-bg-icon:hover,
-.master-bg-icon:focus {
+.master-bg-icon:hover, .master-bg-icon:focus {
   background-color: var(--accent-color);
   border-radius: 50%;
   fill: #ffff;
@@ -741,12 +727,12 @@ body {
   margin-right: 8px;
 }
 
-.page-header-container {
-  display: flex;
-}
-
 .page-header {
   border-bottom: 1px solid #ECECEC;
+}
+
+.page-header-container {
+  display: flex;
 }
 
 .site-nav {
@@ -754,14 +740,6 @@ body {
   width: 294px;
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.site-link {
-  margin-right: 50px;
-}
-
-.site-link:last-child {
-  margin-right: 0;
 }
 
 .site-nav .link {
@@ -775,8 +753,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
+.site-nav .link:hover, .site-nav .link:focus {
   color: var(--accent-color);
 }
 
@@ -816,6 +793,9 @@ body {
 
 .contact-mail,
 .contact-phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -826,30 +806,13 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-mail:hover,
-.contact-mail:focus,
+.contact-mail:hover, .contact-mail:focus,
 .contact-phone:hover,
 .contact-phone:focus {
   color: var(--accent-color);
 }
 
-.contact-mail {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact-phone {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact-mail-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
+.contact-mail-icon,
 .contact-phone-icon {
   margin-right: 10px;
   fill: currentColor;
@@ -893,8 +856,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-mail:hover,
-.footer-mail:focus,
+.footer-mail:hover, .footer-mail:focus,
 .footer-phone:hover,
 .footer-phone:focus {
   color: var(--accent-color);
@@ -921,5 +883,13 @@ body {
   position: relative;
   display: flex;
   align-items: center;
+}
+
+.site-nav__link {
+  margin-right: 50px;
+}
+
+.site-nav__link:last-child {
+  margin-right: 0;
 }
 /*# sourceMappingURL=main.css.map */

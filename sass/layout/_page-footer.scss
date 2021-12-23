@@ -38,16 +38,19 @@
     display: block;
     margin-top: 9px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
 
 }
 
-.footer-mail:hover,
-.footer-mail:focus,
-.footer-phone:hover,
-.footer-phone:focus {
-    color: var(--accent-color);
-}
+// .footer-mail:hover,
+// .footer-mail:focus,
+// .footer-phone:hover,
+// .footer-phone:focus {
+//     color: var(--accent-color);
+// }
 
 
 

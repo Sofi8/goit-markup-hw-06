@@ -1,6 +1,6 @@
-.section.wrap-section {
-    padding-bottom: 0px;
-}
+// .section.wrap-section {
+//     padding-bottom: 0px;
+// }
 
 .wrap-about {
     display: flex;
@@ -11,12 +11,15 @@
 .about-item {
     margin-right: 30px;
     width: 270px;
+    &:last-child{
+        margin-right: 0px;
+    }
 
 }
 
-.about-item:last-child {
-    margin-right: 0px;
-}
+// .about-item:last-child {
+//     margin-right: 0px;
+// }
 
 .thumb {
     width: 270px;

@@ -13,33 +13,61 @@
     border-radius: 4px;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: var(--primary-white-color);
+        background-color: var(--accent-color);
+    }
+    &.pre-hero {
+        color: var(--primary-white-color);
+        background-color: var(--accent-color);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.87;
+        letter-spacing: 0.06em;
+        text-align: center;
+
+        padding: 10px 32px;
+        display: block;
+        margin: 0 auto;
+        min-width: 200px;
+        border-radius: 4px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover,
+        &:focus{
+            color: var(--accent-color);
+            background-color: var(--primary-white-color);
+        }
+    }
+
 }
 
-.button:hover,
-.button:focus {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
+// .button:hover,
+// .button:focus {
+//     color: var(--primary-white-color);
+//     background-color: var(--accent-color);
 
-}
+// }
 
-.button.pre-hero {
-    color: var(--primary-white-color);
-    background-color: var(--accent-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    text-align: center;
+// .button.pre-hero {
+//     color: var(--primary-white-color);
+//     background-color: var(--accent-color);
+//     font-weight: 700;
+//     font-size: 16px;
+//     line-height: 1.87;
+//     letter-spacing: 0.06em;
+//     text-align: center;
 
-    padding: 10px 32px;
-    display: block;
-    margin: 0 auto;
-    min-width: 200px;
-    border-radius: 4px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     padding: 10px 32px;
+//     display: block;
+//     margin: 0 auto;
+//     min-width: 200px;
+//     border-radius: 4px;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-}
+// }
 
 
 // Btn footer
@@ -61,13 +89,18 @@
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus svg{
+         color: var(--accent-color);
+         background-color: var(--secondary-bg-color);
+    }
 }
 
-.button.input-btn:hover,
-.button.input-btn:focus svg {
-    color: var(--accent-color);
-    background-color: var(--secondary-bg-color)
-}
+// .button.input-btn:hover,
+// .button.input-btn:focus svg {
+//     color: var(--accent-color);
+//     background-color: var(--secondary-bg-color);
+// }
 
 .sub-icon {
     position: absolute;
@@ -109,7 +142,10 @@
     justify-content: center;
     text-align: center;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    &:hover svg {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--accent-color);
+    }
 }
 
 .close-icon {
@@ -120,10 +156,10 @@
 
 }
 
-.modal-backdrop-button:hover svg {
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    fill: var(--accent-color);
-}
+// .modal-backdrop-button:hover svg {
+//     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//     fill: var(--accent-color);
+// }
 
 .is-hidden {
     opacity: 0;
@@ -153,9 +189,13 @@
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+    color: var(--accent-color);
+    background-color: var(--primary-white-color)
+    }
 }
 
-.submit-button:hover {
-color: var(--accent-color);
-background-color: var(--primary-white-color)
-}
+// .submit-button:hover {
+// color: var(--accent-color);
+// background-color: var(--primary-white-color)
+// }

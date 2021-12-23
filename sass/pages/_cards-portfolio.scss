@@ -8,16 +8,21 @@
     flex-basis: calc(100% / 3 - 30px);
     margin-right: 30px;
     margin-bottom: 30px;
-
-
+    &:hover,
+    &:focus{
+        border-radius: 4px;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
 
-.wrap-item:hover,
-.wrap-item:focus {
-    border-radius: 4px;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+// .wrap-item:hover,
+// .wrap-item:focus {
+//     border-radius: 4px;
+//     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 
-}
+// }
 
 .wrap-item:hover .wrap-item-exposition {
     transform: translateY(0);
@@ -35,8 +40,6 @@
     font-size: 18px;
     line-height: 1.55;
     letter-spacing: 0.03em;
-
-
     position: absolute;
     left: 0;
     top: 0;

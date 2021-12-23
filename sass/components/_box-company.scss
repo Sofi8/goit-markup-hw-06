@@ -17,28 +17,37 @@
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     box-sizing: border-box;
-    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
-
-
-.box-link:hover {
-    border: 1px solid var(--accent-color);
-    border-radius: 4px;
-}
-
-.box-link:focus {
-    border: 1px solid var(--accent-color);
-    border-radius: 4px;
-}
-
-.box-link:hover svg {
-    fill: var(--accent-color);
-}
-
-.box-link:focus svg {
-    fill: var(--accent-color);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+        border-radius: 4px;
+    }
+    &:hover svg,
+    &:focus svg {
+        fill: var(--accent-color);
+    }
 }
 
 .about-company {
     fill: #AFB1B8;
 }
+
+
+// .box-link:hover {
+//     border: 1px solid var(--accent-color);
+//     border-radius: 4px;
+// }
+
+// .box-link:focus {
+//     border: 1px solid var(--accent-color);
+//     border-radius: 4px;
+// }
+
+// .box-link:hover svg {
+//     fill: var(--accent-color);
+// }
+
+// .box-link:focus svg {
+//     fill: var(--accent-color);
+// }

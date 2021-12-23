@@ -19,12 +19,19 @@
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        border-radius: 50%;
+        fill: #ffff;
+
+    }
 }
 
-.master-bg-icon:hover,
-.master-bg-icon:focus {
-    background-color: var(--accent-color);
-    border-radius: 50%;
-    fill: #ffff;
+// .master-bg-icon:hover,
+// .master-bg-icon:focus {
+//     background-color: var(--accent-color);
+//     border-radius: 50%;
+//     fill: #ffff;
 
-}
+// }

@@ -3,4 +3,10 @@
 
     padding-top: 94px;
     padding-bottom: 94px;
+    &.wrap-section {
+     padding-bottom: 0px;
+    }
+    &.command {
+    background-color: #F5F4FA;
+    }
 }
